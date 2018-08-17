@@ -544,14 +544,14 @@ $(function() {
 
   }
 
-  function updateData(row_index) {
+  function updateData(group_name, area_name) {
     //SVG が使えるかどうかの判定を行う。
     //TODO Android 2.3以下では見れない（代替の表示も含め）不具合が改善されてない。。
     //参考 http://satussy.blogspot.jp/2011/12/javascript-svg.html
     var ableSVG = (window.SVGAngle !== void 0);
     //var ableSVG = false;  // SVG未使用の場合、descriptionの1項目目を使用
     var group = areaGroup[group_name];
-    var areaModel = areaModels[row_index];
+    var areaModel = group[area_name];
     var today = new Date();
     //直近の一番近い日付を計算します。
     areaModel.calcMostRect();
@@ -666,7 +666,7 @@ $(function() {
     });
   }
 
-  function onChangeSelect(row_index) {　
+  function onChangeSelect(group_name, area_name) {　
     if (group_name == -1) {
       setSelectedGroupName(-1);
       $("#accordion").html("");
