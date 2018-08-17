@@ -704,7 +704,7 @@ $(function() {
   $("#select_area").change(function(data) {
     var area_name = $(data.target).val();
     var group_name = $("#select_group").val();
-    onChangeSelect(row_index);
+    onChangeSelect(group_name, area_name);
   });
 
   //-----------------------------------
