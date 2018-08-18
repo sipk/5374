@@ -1,6 +1,6 @@
 label,sublabel,description,styles,bgcolor
-可燃ごみ,,,img/moyasu02.svg,#EE7144
-プラスチック製容器包装,,,img/shigen02.svg,#52D6BC
-空き缶、空きびん、ペットボトル、廃食用油,,,img/shigen02.svg,#46BBD0
-金物・小型電化製品、有害ごみ,,,img/moyasanai02.svg,#7D75ED
-埋立ごみ,,,img/moyasanai02.svg,#EDBB64
+可燃ごみ,,,img/kanen.svg,#EE7144
+プラスチック製容器包装,,,img/plastic.svg,#52D6BC
+空き缶、空きびん、ペットボトル、廃食用油,,,img/can.svg,#46BBD0
+金物・小型電化製品、有害ごみ,,,img/kanamono.svg,#7D75ED
+埋立ごみ,,,img/umetate.svg,#EDBB64
