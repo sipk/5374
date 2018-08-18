@@ -375,7 +375,7 @@ $(function() {
     return val ? val : -1;
   }
 
-  function getSelectedGroupName(name) {
+  function setSelectedGroupName(name) {
     localStorage.setItem("selected_group_name", name);
   }
 
