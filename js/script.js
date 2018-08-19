@@ -93,7 +93,7 @@ var TrashModel = function(_lable, _cell, remarks) {
   var result_text = "";
 //    var today = new Date();
   /**
-   * sipk: 年末年始の確認
+   * sipk: 年末年始の動作確認
    */
   var today = new Date(2018, 12, 30)
 
@@ -190,7 +190,7 @@ var TrashModel = function(_lable, _cell, remarks) {
 
 //      var today = new Date();
       /**
-       * sipk: 年末年始の確認
+       * sipk: 年末年始の動作確認
        */
       var today = new Date(2018, 12, 30)
 
@@ -299,7 +299,11 @@ var TrashModel = function(_lable, _cell, remarks) {
       return 0;
     })
     //直近の日付を更新
-    var now = new Date();
+//    var now = new Date();
+    /**
+     * sipk: 年末年始の動作確認
+     */
+    var now = new Date(2018, 12, 30);
     for (var i in day_list) {
       if (this.mostRecent == null && now.getTime() < day_list[i].getTime() + 24 * 60 * 60 * 1000) {
         this.mostRecent = day_list[i];
@@ -576,7 +580,7 @@ $(function() {
     var areaModel = group[area_name];
 //    var today = new Date();
     /**
-     * sipk: 年末年始の確認
+     * sipk: 年末年始の動作確認
      */
     var today = new Date(2018, 12, 30)
     //直近の一番近い日付を計算します。
