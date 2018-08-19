@@ -106,6 +106,8 @@ var TrashModel = function(_lable, _cell, remarks) {
       result_text = "不定期 ";
       this.regularFlg = 0;  // 定期回収フラグオフ
     }
+    // sipk: 都合により、result_textを非表示し、remarksで表示指定することにした
+    result_text = ""
   }
   if (monthSplitFlag){
     var monthList="";
