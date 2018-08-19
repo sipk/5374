@@ -95,7 +95,7 @@ var TrashModel = function(_lable, _cell, remarks) {
   /**
    * sipk: 年末年始の動作確認
    */
-  var today = new Date(2018, 12, 30)
+  var today = new Date(2018, 11, 30)
 
   for (var j in this.dayCell) {
     if (this.dayCell[j].length == 1) {
@@ -192,7 +192,7 @@ var TrashModel = function(_lable, _cell, remarks) {
       /**
        * sipk: 年末年始の動作確認
        */
-      var today = new Date(2018, 12, 30)
+      var today = new Date(2018, 11, 30)
 
       // 12月 +3月　を表現
       for (var i = 0; i < MaxMonth; i++) {
@@ -303,7 +303,7 @@ var TrashModel = function(_lable, _cell, remarks) {
     /**
      * sipk: 年末年始の動作確認
      */
-    var now = new Date(2018, 12, 30);
+    var now = new Date(2018, 11, 30);
     for (var i in day_list) {
       if (this.mostRecent == null && now.getTime() < day_list[i].getTime() + 24 * 60 * 60 * 1000) {
         this.mostRecent = day_list[i];
@@ -582,7 +582,7 @@ $(function() {
     /**
      * sipk: 年末年始の動作確認
      */
-    var today = new Date(2018, 12, 30)
+    var today = new Date(2018, 11, 30)
     //直近の一番近い日付を計算します。
     areaModel.calcMostRect();
     //トラッシュの近い順にソートします。
