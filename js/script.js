@@ -91,7 +91,11 @@ var TrashModel = function(_lable, _cell, remarks) {
   this.regularFlg = 1;      // 定期回収フラグ（デフォルトはオン:1）
 
   var result_text = "";
-  var today = new Date();
+//    var today = new Date();
+  /**
+   * sipk: 年末年始の確認
+   */
+  var today = new Date(2018, 12, 30)
 
   for (var j in this.dayCell) {
     if (this.dayCell[j].length == 1) {
@@ -184,7 +188,11 @@ var TrashModel = function(_lable, _cell, remarks) {
     // 定期回収の場合
     if (this.regularFlg == 1) {
 
-      var today = new Date();
+//      var today = new Date();
+      /**
+       * sipk: 年末年始の確認
+       */
+      var today = new Date(2018, 12, 30)
 
       // 12月 +3月　を表現
       for (var i = 0; i < MaxMonth; i++) {
@@ -566,7 +574,11 @@ $(function() {
     //var ableSVG = false;  // SVG未使用の場合、descriptionの1項目目を使用
     var group = areaGroup[group_name];
     var areaModel = group[area_name];
-    var today = new Date();
+//    var today = new Date();
+    /**
+     * sipk: 年末年始の確認
+     */
+    var today = new Date(2018, 12, 30)
     //直近の一番近い日付を計算します。
     areaModel.calcMostRect();
     //トラッシュの近い順にソートします。
