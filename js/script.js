@@ -72,7 +72,11 @@ var TrashModel = function(_lable, _cell, remarks) {
     var flag = _cell.split(":");
     this.dayCell = flag[0].split(" ");
     var mm = flag[1].split(" ");
-  } else if (_cell.length == 2 && _cell.substr(0,1) == "*") {
+//  } else if (_cell.length == 2 && _cell.substr(0,1) == "*") {
+  /**
+   * sipk: remarks.csvでIDを2桁以上使いたい
+   */
+  } else if ((_cell.length == 2 || _cell.length == 3) && _cell.substr(0,1) == "*") {
     this.dayCell = _cell.split(" ");
     var mm = new Array();
   } else {
