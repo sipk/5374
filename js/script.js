@@ -76,7 +76,7 @@ var TrashModel = function(_lable, _cell, remarks) {
   /**
    * sipk: remarks.csvでIDを2桁以上使いたい
    */
-  } else if ((_cell.length == 2 || _cell.length == 3) && _cell.substr(0,1) == "*") {
+  } else if (_cell.substr(0,1) == "*") {
     this.dayCell = _cell.split(" ");
     var mm = new Array();
   } else {
