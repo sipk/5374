@@ -152,11 +152,7 @@ var TrashModel = function(_lable, _cell, remarks) {
     this.dayCell.forEach(function(day){
       if (day.substr(0,1) == "*") {
         remarks.forEach(function(remark){
-//          if (remark.id == day.substr(1,1)){
-          /**
-           * sipk: remarks.csvでIDを2桁以上使いたい
-           */
-          if (remark.id == day.substr(1)){
+          if (remark.id == day.substr(1,1)){
             ret += remark.text + "<br/>";
           }
         });
